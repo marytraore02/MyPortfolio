@@ -3,7 +3,7 @@
 /**********************************/
 body {
     color: #666666;
-    background: #F6D155;
+    background: #dcdcdc;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,13 +15,26 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #FF6F61;
+    color: #6186ff;
     outline: none;
     text-decoration: none;
 }
 
 .btn:focus {
     box-shadow: none;
+}
+
+
+.titre, .tit{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+#space{
+    padding-top: 3.7em;  
 }
 
 
@@ -47,7 +60,7 @@ a:focus {
     width: 100%;
     padding: 15px;
     float: left;
-    background: #F6D155;
+    background: #dcdcdc;
 }
 
 .wrapper .sidebar-header,
@@ -69,7 +82,7 @@ a:focus {
     border-top: none;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar-expand-md .navbar-nav .nav-link #navlink{
     color: #ffffff;
     padding: 5px 15px 7px 15px;
     transition: all .3s;
@@ -102,6 +115,9 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+    #space{
+        top: 0;  
+    }
     .wrapper .content {
         padding: 30px 0px 30px 30px;
     }
@@ -112,7 +128,7 @@ a:focus {
         content: "";
         width: 100%;
         height: 30px;
-        background: #F6D155;
+        background: #dcdcdc;
         z-index: 1;
     }
     
@@ -262,7 +278,6 @@ a:focus {
     }
 }
 
-
 /**********************************/
 /******** Back to Top CSS *********/
 /**********************************/
@@ -314,7 +329,7 @@ a:focus {
 
 .header .content-inner {
     padding: 100px 30px;
-    background: url(../img/profile.png) right bottom no-repeat;
+    background: url(../img/tof1.png) right bottom no-repeat;
     background-size: contain;
 }
 
@@ -350,7 +365,7 @@ a:focus {
 
 .large-btn .content-inner {
     font-size: 0;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 .large-btn .btn {
@@ -425,7 +440,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 
@@ -493,7 +508,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 .education .edu-col {
@@ -507,7 +522,9 @@ a:focus {
 .education .col-md-6:first-child .edu-col {
     padding-top: 0;
 }
-
+.col-md-6 span {
+    font-weight: 600;
+}
 .education .col-md-6:last-child .edu-col {
     border-bottom: none;
     padding-bottom: 0;
@@ -566,7 +583,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 .experience .exp-col {
@@ -653,7 +670,7 @@ a:focus {
     position: relative;
     padding: 60px 30px 30px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 .service .srv-col {
@@ -700,7 +717,7 @@ a:focus {
     position: relative;
     padding: 60px 30px 30px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 .portfolio #portfolio-flters {
@@ -847,7 +864,7 @@ a:focus {
 .review {
     position: relative;
     background: #ffffff;
-    border-bottom: 30px solid #F6D155;
+    border-bottom: 30px solid #dcdcdc;
 }
 
 .review .content-inner {
@@ -1074,7 +1091,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 30px 30px 0 30px;
-    background: #F6D155;
+    background: #dcdcdc;
 }
 
 .footer .col-md-6:last-child {

@@ -7,28 +7,42 @@
         <meta content="Resume Website Template Free Download" name="keywords">
         <meta content="Resume Website Template Free Download" name="description">
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="font-awesome/css/all.min.css">
         <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="lib/slick/slick.css" rel="stylesheet">
         <link href="lib/slick/slick-theme.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Email configue settings -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("RNzviNO1qd3QIkUhG");
+            })();
+        </script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
         <div class="wrapper">
             <div class="sidebar">
                 <div class="sidebar-header">
-                    <img src="img/profile.jpg" alt="Image">
+                    <img src="img/tof2.jpg" alt="Image">
                 </div>
                 <div class="sidebar-content">
                     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -43,6 +57,12 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">Apropos<i class="fa fa-address-card"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#education">Education<i class="fa fa-envelope"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#formation">Formation<i class="fa fa-envelope"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#experience">Experience<i class="fa fa-star"></i></a>
@@ -73,7 +93,7 @@
                         <p>Je suis</p>
                         <h1>Mary TRAORE</h1>
                         <h2></h2>
-                        <div class="typed-text">Concepteur de système, Développeur d'application web et mobile, Développeur Full Stack, Graphiste</div>
+                        <div class="typed-text">Développeur Full Stack, Analyste programmeur, Web designer, UI UX</div>
                     </div>
                 </div>
                 <!-- Header End -->
@@ -81,25 +101,25 @@
                 <!-- Large Button Start -->
                 <div class="large-btn">
                     <div class="content-inner">
-                        <a class="btn" href="#"><i class="fa fa-download"></i>CV</a>
-                        <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Engagez-moi</a>
+                        <a class="btn" href="pdf/cv.pdf"><i class="fa fa-download"></i>CV</a>
+                        <a class="btn" id="navlink" href="#contact"><i class="fa fa-hands-helping"></i>Engagez-moi</a>
                     </div>
                 </div>
                 <!-- Large Button End -->
-                
+               
                 <!-- About Start -->
                 <div class="about" id="about">
-                    <div class="content-inner">
+                    <div class="content-inner" >
                         <div class="content-header">
                             <h2>A propos</h2>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-md-6 col-lg-5">
-                                <img src="img/about.jpg" alt="Image">
+                                <img src="img/tof3.jpg" alt="Image">
                             </div>
                             <div class="col-md-6 col-lg-7">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci. Donec molestie velit id libero blandit, quis suscipit urna suscipit. Donec aliquet erat eu lacinia iaculis. Ut tempor tellus eu sem pharetra feugiat. Proin libero ligula, gravida at porttitor eget.
+                                    Développeur full stack certifié Scrum, avec plus de 2ans d'expérience. Je souhaite désormais mettre mes compétences et mon expérience au service de votre compagnie. Ayant conçu quelques applications de différents genres (news, quiz, outils...), je peux appliquer à l’équipe de développement de votre compagnie mes connaissances techniques en analyse et en développement UI/UX. À quoi s’ajoutent mes excellentes capacités d’adaptation et de communication. 
                                 </p>
                                 <a class="btn" href="#">Engagez-moi</a>
                             </div>
@@ -107,68 +127,122 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="skills">
+                                    <h4 class="titre">langages</h4>
                                     <div class="skill-name">
-                                        <p>HTML-CSS</p><p>85%</p>
+                                        <p>HTML - CSS - JAVASCRIPT</p><p>80%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <div class="skill-name">
-                                        <p>PHP-MYSQL</p><p>90%</p>
+                                        <p>PHP</p><p>60%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="skills">
                                     <div class="skill-name">
-                                        <p>JAVASCRIPT</p><p>60%</p>
+                                        <p>C,C++,C#,VB</p><p>75%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <div class="skill-name">
-                                        <p>PYTHON-DJAGO</p><p>70%</p>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-md-6">
-                                <div class="skills">
-                                    <div class="skill-name">
-                                        <p>C,C++,VB</p><p>80%</p>
+                                        <p>JAVA</p><p>78%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <div class="skill-name">
-                                        <p>FLUTTER-DART</p><p>80%</p>
+                                        <p>DART</p><p>80%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>PYTHON</p><p>65%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="skills">
+                                    <h4 class="titre">framework</h4>
                                     <div class="skill-name">
-                                        <p>JAVA/J2EE</p><p>90%</p>
+                                        <p>SPRING - SPRING BOOT</p><p>85%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <div class="skill-name">
-                                        <p>MICROSFT OFFICE</p><p>80%</p>
+                                        <p>ANGULAR</p><p>80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>IONIC</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>DJANGO</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>FLUTTER</p><p>85%</p>
                                     </div>
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="skills">
+                                <h4 class="tit">base de donnee</h4>
+                                    <div class="skill-name">
+                                        <p>MySQL - SQLite</p><p>70%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>SQL - NoSQL</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>UML 2.0</p><p>75%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skills">
+                                <h4 class="tit">compétences</h4>
+                                    <div class="skill-name">
+                                        <p>MAQUETTAGE WEB ET MOBILE</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>WORD, EXCEL, POWERPOINT</p><p>80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -183,30 +257,62 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="edu-col">
-                                    <span>01-Sep-2017 <i>au</i> 5-juin-19</span>
+                                    <span>01-Sep-2017 <i>au</i> 5-juin-2019</span>
                                     <h3>Lycée</h3>
-                                    <p>La date du cursus lycée.</p>
+                                    <p>Cursus scolaire du lycée.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="edu-col">
-                                    <span>01-Sep-2018 <i>au</i> 30-Aout-2019</span>
+                                    <span>01-Sep-2018 <i>au</i> 30-Août-2019</span>
                                     <h3>Baccalauréat</h3>
-                                    <p>La date d'obtention du Baccalauréat.</p>
+                                    <p>Date d'obtention du Baccalauréat.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="edu-col">
-                                    <span>01-Oct-2019 <i>au</i> ----2022</span>
+                                    <span>01-Oct-2019 <i>au</i> Juillet-2022</span>
                                     <h3>Licence professionnelle</h3>
-                                    <p>La date d'obtention licence professionnelle comme developpeur.</p>
+                                    <p>Developpeur web et mobile</p>
                                 </div>
                             </div>
-                           
                         </div>
                     </div>
                 </div>
-                <!-- Education Start -->
+                <!-- Education End -->
+
+                 <!-- Formation Start -->
+                 <div class="education" id="formation">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Formation</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>Juin 2021 </span>
+                                    <h3>Flutter</h3>
+                                    <p>Formation en développement d'application mobile avec le framework flutter.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>Juin 2021 </span>
+                                    <h3>EIG-MALI</h3>
+                                    <p>Formation pour l'acquisition des compétences de bases avec l'outil photoshop. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>01-Juin-2022 <i>au</i> 31-Décembre-2022</span>
+                                    <h3>Développeur web et mobile</h3>
+                                    <p>Conception et développement web et mobile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formation End -->
                 
                 <!-- Experience Start -->
                 <div class="experience" id="experience">
@@ -217,29 +323,34 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="exp-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>Codex Solution</h3>
-                                    <h4>San Francisco, CA</h4>
-                                    <h5>Project Manager</h5>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                    <span>2021 <i>au</i> 31-Dec-2050</span>
+                                    <h3>YOUNG-LABS</h3>
+                                    <h4>Hamdalaye ACI 2000, Bamako </h4>
+                                    <h5>Développement front-end</h5>
+                                    <p>
+                                        Chargé du développement front-end du site web de l’entreprise YOUNG LABS au sein d'une équipes 8 personnes.</br>
+                                        Développement de logiciel ASMAW (logiciel de gestion des écoles) à l'entreprise Y-LABS.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="exp-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>Soft Solution Ltd</h3>
-                                    <h4>San Francisco, CA</h4>
-                                    <h5>Web Developer</h5>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                    <span>2019 - 2022 <i>au</i> 31-Dec-2050</span>
+                                    <h3>DEVELOPPEUR</h3>
+                                    <h4>Bamako </h4>
+                                    <h5>Développement autodidacte</h5>
+                                    <p>
+                                        Développement front et back ainsi que le responsive d’un site web pour agence de voyage(HTML,CSS,JS,PHP).
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="exp-col">
-                                    <span>01-Jan-2020 <i>to</i> 31-Dec-2050</span>
-                                    <h3>ABC Soft Ltd</h3>
-                                    <h4>San Francisco, CA</h4>
-                                    <h5>Web Designer</h5>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                    <span>04-Janvier-2022 <i>au</i> 04-Avril-2022</span>
+                                    <h3>MDT-infortmatique</h3>
+                                    <h4>Torokorobougou, Bamako</h4>
+                                    <h5>Développeur junior(Stagiaire)</h5>
+                                    <p>Développpement full stack d'une application mobile(MAKISTA).</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -254,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Experience Start -->
+                <!-- Experience End -->
                 
                 <!-- Service Start -->
                 <div class="service" id="service">
@@ -266,29 +377,29 @@
                             <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-desktop"></i>
-                                    <h3>Web Design</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                    <h3>Conception de solutions informatique</h3>
+                                    <p>Analyse, conception, réalisation, test, déploiement, des applications web et mobiles.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fa fa-envelope-open-text"></i>
+                                    <h3>Optmiser l'expérience utilisateurs</h3>
+                                    <p>Analyser les données concernant le comportement des utilisateurs et optimiser les applications en conséquence (UI, UX). </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-laptop"></i>
-                                    <h3>Web Development</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                    <h3>Maintenance</h3>
+                                    <p>Entretenir et mettre à jour les applications en fonction des évolutions des OS et appareils.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-search"></i>
                                     <h3>SEO</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="srv-col">
-                                    <i class="fa fa-envelope-open-text"></i>
-                                    <h3>Digital Marketing</h3>
-                                    <p>Lorem ipsum dolor sit amet elit suscipit orci. Donec molestie velit id libero.</p>
+                                    <p>Réferencement de vos sites web à travers le CMS Wordpress.</p>
                                 </div>
                             </div>
                         </div>
@@ -306,20 +417,33 @@
                             <div class="col-lg-12">
                                 <ul id="portfolio-flters">
                                     <li data-filter="*" class="filter-active">All</li>
-                                    <li data-filter=".web-des">Design</li>
-                                    <li data-filter=".web-dev">Development</li>
-                                    <li data-filter=".dig-mar">Marketing</li>
+                                    <li data-filter=".web-des">Maquettes</li>
+                                    <li data-filter=".web-dev">Projets</li>
+                                    <li data-filter=".dig-mar">Populaire</li>
                                 </ul>
                             </div>
                         </div>
+                        
                         <div class="row portfolio-container">
-                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev dig-mar">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/portfolio-1.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Design</span></a>
+                                        <img src="img/artisanat.jpg" class="img-fluid" alt="">
+                                        <a href="img/artisanat.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://art-mali.epizy.com/" target="_blank" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://art-mali.epizy.com/" target="_blank">Site e-commerce<span>Site pour montrer le savoir faire artisanal du Mali avec du e-commerce </span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev dig-mar">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/erp.png" class="img-fluid" alt="">
+                                        <a href="img/erp.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">ERP<span>Un outil de gestion des activités et salles de Orange Digital Center </span></a>
                                     </figure>
                                 </div>
                             </div>
@@ -327,10 +451,10 @@
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/portfolio-2.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Design</span></a>
+                                        <img src="img/cv-img.png" class="img-fluid" alt="">
+                                        <a href="img/cv-img.png" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://www.figma.com/file/KNUH9A2HVGodyFshx1awvE/CV-update?t=ZIkPd6cx2bGxMoBx-0" class="link-details" target="_blank" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://www.figma.com/file/KNUH9A2HVGodyFshx1awvE/CV-update?t=ZIkPd6cx2bGxMoBx-0" target="_blank">Mon cv en maquette <span>Une réalisation de mon professionnelle en maquette</span></a>
                                     </figure>
                                 </div>
                             </div>
@@ -338,43 +462,97 @@
                             <div class="col-lg-4 col-md-6 portfolio-item web-dev">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Development</span></a>
+                                        <img src="img/t-sort1.png" class="img-fluid" alt="">
+                                        <a href="img/t-sort1.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">Api tirage au sort <span>Un api de tirage au sort developper en back-end</span></a>
                                     </figure>
                                 </div>
                             </div>
 
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/tirage1.png" class="img-fluid" alt="">
+                                        <a href="img/tirage1.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://www.figma.com/file/c6awcwAHDwyUuHTleHxzfi/Maquette-FreeTirage?node-id=0%3A1&t=1M5CFQwyriTdNuvU-0" class="link-details" title="voir plus" target="_blank"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://www.figma.com/file/c6awcwAHDwyUuHTleHxzfi/Maquette-FreeTirage?node-id=0%3A1&t=1M5CFQwyriTdNuvU-0" target="_blank">Tirage au sort <span>Outils de tirage au sort en ligne</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev dig-mar">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/fron.jpg" class="img-fluid" alt="">
+                                        <a href="img/fron.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">Tirage au sort en ligne<span>Platforme de tirage au sort en ligne </span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/bus1.png" class="img-fluid" alt="">
+                                        <a href="img/bus2.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://www.figma.com/file/BejNBlZ9LGmbVIZksVjd8l/ProjectDeReve?node-id=0%3A1&t=ayz5t387Gr7eCqwX-0" class="link-details" title="voir plus" target="_blank"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://www.figma.com/file/BejNBlZ9LGmbVIZksVjd8l/ProjectDeReve?node-id=0%3A1&t=ayz5t387Gr7eCqwX-0" target="_blank">Réservation de ticket <span>Maquette de réservation de ticket de bus</span></a>
+                                    </figure>
+                                </div>
+                            </div>
                             <div class="col-lg-4 col-md-6 portfolio-item web-dev">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-4.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Development</span></a>
+                                        <img src="img/error.png" class="img-fluid" alt="">
+                                        <a href="img/error.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">Gestion erreurs<span>Plateforme de gestion des erreurs d'un projet de développement </span></a>
+                                    </figure>
+                                </div>
+                            </div> 
+                            
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/art.jpg" class="img-fluid" alt="">
+                                        <a href="img/art.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://www.figma.com/file/JTcns7qHvR8JAuD9OpealE/Mali-art?t=ZIkPd6cx2bGxMoBx-0" class="link-details" title="voir plus" target="_blank"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://www.figma.com/file/JTcns7qHvR8JAuD9OpealE/Mali-art?t=ZIkPd6cx2bGxMoBx-0" target="_blank">Site artisanal <span>Maquette du site artisanal du mali</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/sp.png" class="img-fluid" alt="">
+                                        <a href="img/sp.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">Spring security <span>Securisation de son backend à l'aide de Spring et Monitoring des logs</span></a>
+                                    </figure>
+                                </div>
+                            </div> 
+
+                              <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="img/tikok.png" class="img-fluid" alt="">
+                                        <a href="img/tikok.png" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="#" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="#">Clone de tik tok<span>Clone de l'application flutter à la découverte de SDK flutter</span></a>
                                     </figure>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar web-dev">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Digital Marketing</span></a>
-                                    </figure>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
-                                <div class="portfolio-wrap">
-                                    <figure>
-                                        <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Digital Marketing</span></a>
+                                        <img src="img/env.jpg" class="img-fluid" alt="">
+                                        <a href="img/env.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://envorotwo.ml/" target="_blank" class="link-details" title="voir plus"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://envorotwo.ml/" target="_blank">CMS <span>Un site web en CMS sur l'environnement.</span></a>
                                     </figure>
                                 </div>
                             </div>
@@ -442,7 +620,7 @@
                     </div>
                 </div>
                 <!-- Review End -->
-                
+
                 <!-- Contact Start -->
                 <div class="contact" id="contact">
                     <div class="content-inner">
@@ -452,38 +630,39 @@
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="contact-info">
-                                    <p><i class="fa fa-user"></i>Michael Miller</p>
-                                    <p><i class="fa fa-tag"></i>Web Designer & Developer</p>
-                                    <p><i class="fa fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></p>
-                                    <p><i class="fa fa-phone"></i><a href="tel:+1234567890">+123-456-7890</a></p>
-                                    <p><i class="fa fa-map-marker"></i>123 Street, Los Angeles, CA, USA</p>
+                                    <p><i class="fa fa-user"></i>Mary TRAORE</p>
+                                    <p><i class="fa fa-tag"></i>Web Designer & Developpeur</p>
+                                    <p><i class="fa fa-envelope"></i><a href="mailto:marytra292@gmail.com">marytra292@gmail.com</a></p>
+                                    <p><i class="fa fa-phone"></i><a href="tel:+64897331">+223 64897331</a></p>
+                                    <p><i class="fa fa-map-marker"></i>Bamako, Mali, CommuneIII</p>
                                     <div class="social">
-                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                        <a class="btn" href=""><i class="fab fa-youtube"></i></a>
+                                        <a class="btn" target="_blank" href="https://twitter.com/MaryTRAORE11"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" target="_blank" href="https://www.facebook.com/mary.traore.3998263/"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" target="_blank" href="https://www.linkedin.com/in/mary-traore-069ab3233/"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" target="_blank" href="https://www.instagram.com/marytraore85/?hl=fr"><i class="fab fa-instagram"></i></a>
+                                        <a class="btn" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="col-md-6">
                                 <div class="form">
                                     <form>
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" placeholder="Your Name" />
+                                                <input type="text" class="form-control" id="name" placeholder="Nom" />
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <input type="email" class="form-control" placeholder="Your Email" />
+                                                <input type="email" class="form-control" id="email" placeholder="Email" required/>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject" />
+                                            <input type="text" class="form-control" id="objet" placeholder="Objet" required/>
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                            <textarea class="form-control" rows="5" id="message" placeholder="Message" required></textarea>
                                         </div>
-                                        <div><button class="btn" type="submit">Send Message</button></div>
+                                        <div><button class="btn" type="submit" onclick="sendMail()">Envoyer</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -497,13 +676,17 @@
                     <div class="content-inner">
                         <div class="row align-items-center">
                             <div class="col-md-6">
-                                <p>&copy; Copyright <a href="https://htmlcodex.com">HTML Codex</a>. All Rights Reserved</p>
+                                <p>&copy; Copyright <span>2022</span>. Tout droit réserver</p>
                             </div>
                             <div class="col-md-6">
-                                <p>Powered by <a href="https://htmlcodex.com">HTML Codex</a></p>
+                                <p>Créer par <a href="#">Mary TRAORE</a></p>
                             </div>
                         </div>
                     </div>
+                    
+                    <hr>
+                        <p class="col-md-12" style="text-align: center;">Analyste programmeur, Développeur web et mobile</p>
+                  
                 </div>
                 <!-- Footer Start -->
             </div>
