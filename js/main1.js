@@ -1,3 +1,4 @@
+
 (function ($) {
     "use strict";
     
@@ -19,16 +20,16 @@
     
 
     // Typed Initiate
-    if ($('.header h1').length == 1) {
-        var typed_strings = $('.header .typed-text').text();
-        var typed = new Typed('.header h1', {
-            strings: typed_strings.split(', '),
-            typeSpeed: 50,
-            backSpeed: 1,
-            smartBackspace: false,
-            loop: true
-        });
-    }
+    // if ($('.header h2').length == 1) {
+    //     var typed_strings = $('.header .typed-text').text();
+    //     var typed = new Typed('.header h2', {
+    //         strings: typed_strings.split(', '),
+    //         typeSpeed: 100,
+    //         backSpeed: 20,
+    //         smartBackspace: false,
+    //         loop: true
+    //     });
+    // }
     
     
     // Skills
@@ -104,7 +105,13 @@ function sendMail() {
       .catch(err=>console.log(err));
   
   }
-///////////////////////////////////Fonction pour email fin////////////////////////////////
+
+
+  
+///////////////////////////////////Fonction pour email fin ////////////////////////////////
+
+
+
 
 
 

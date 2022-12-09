@@ -94,6 +94,7 @@
                     <a href="https://twitter.com/MaryTRAORE11" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/mary.traore.3998263/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.linkedin.com/in/mary-traore-069ab3233/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/marytraore02" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="content">
@@ -124,7 +125,7 @@
                             <div class="overlay"></div>
                           <div class="container">
                             <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                                <div class="one-third js-fullheight order-md-last img" style="background-image:url(img/bg_2.png);">
+                                <div class="one-third js-fullheight order-md-last img" style="background-image:url(img/tof1.png);">
                                     <div class="overlay"></div>
                                 </div>
                                 <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -675,6 +676,16 @@
                 </div> -->
                 <!-- Review End -->
 
+                <!-- Popup Debut -->
+                <!-- <div class="popup" id="popup">
+                    <img src="img/tick.png" alt="">
+                    <h2>Merci!</h2>
+                    <p>Message envoyer avec success.</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div> -->
+                <!-- Popup End -->
+
+
                 <!-- Contact Start -->
                 <div class="contact" id="contact">
                     <div class="content-inner">
@@ -716,7 +727,10 @@
                                         <div class="form-group">
                                             <textarea class="form-control" rows="5" id="message" placeholder="Message" required></textarea>
                                         </div>
-                                        <div><button class="btn" type="submit" onclick="sendMail()">Envoyer</button></div>
+                                        <div>
+                                            <button class="btn" type="submit" onclick="sendMail()">Envoyer</button>
+                                            <button class="btn" type="submit" onclick="openPopup()">popup</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -749,6 +763,22 @@
         <!-- Back to Top -->
         <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
         
+
+        <!-- <script>
+            let popup = document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script> -->
+
+
+
+
+
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
